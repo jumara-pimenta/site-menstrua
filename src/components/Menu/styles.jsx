@@ -3,7 +3,7 @@ export const menuStyle = {
   alignItems: 'center',
   position: 'absolute',
   backgroundColor: '#FFF',
-  width: '1847px',
+  width: '100%',
   height: '94px',
   top: 0,
   left: 0,
