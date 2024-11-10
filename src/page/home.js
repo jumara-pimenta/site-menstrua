@@ -1,6 +1,8 @@
 import Banner from "../components/Banner/banner";
+import Footer from "../components/Footer/footer";
 import Integrantes from "../components/Integrantes/integrantes";
 import Menu from "../components/Menu/menu";
+import Midia from "../components/Midia/midia";
 import Projeto from "../components/Projeto/projeto";
 
 const Home = () => {
@@ -8,8 +10,16 @@ const Home = () => {
     <>
       <Menu />
       <Banner />
-      <Projeto />
-      <Integrantes />
+      <section id="sobre">
+        <Projeto />
+      </section>
+      <section id="midia">
+        <Midia />
+      </section>
+      <section id="integrantes">
+        <Integrantes />
+      </section>
+      <Footer />
     </>
   );
 };

@@ -6,7 +6,9 @@ import fotoJhen from '../../assets/integrantes/Integrante1.jpeg';
 import fotoJaque from '../../assets/integrantes/Integrante3.jpeg';
 import fotoIza from '../../assets/integrantes/Integrante4.jpeg';
 import fotoEve from '../../assets/integrantes/Integrante5.jpeg';
-
+import fotoQuezia from '../../assets/integrantes/Integrante6.jpeg';
+import fotoMaria from '../../assets/integrantes/Integrante8.jpeg';
+import fotoAna from '../../assets/integrantes/Integrante7.jpeg';
 
 const Integrantes = () => {
     const integrantes = [
@@ -16,9 +18,9 @@ const Integrantes = () => {
         { nome: 'Jaqueline Figuerôa', descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit libero, molestie id auctor molestie, fermentum a tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.', foto: fotoJaque },
         { nome: 'Izaída Ribeiro', descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit libero, molestie id auctor molestie, fermentum a tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.', foto: fotoIza },
         { nome: 'Eveline Pereira', descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit libero, molestie id auctor molestie, fermentum a tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.', foto: fotoEve },
-        { nome: 'Eveline Pereira', descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit libero, molestie id auctor molestie, fermentum a tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.', foto: fotoEve },
-        { nome: 'Eveline Pereira', descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit libero, molestie id auctor molestie, fermentum a tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.', foto: fotoEve },
-        { nome: 'Eveline Pereira', descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit libero, molestie id auctor molestie, fermentum a tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.', foto: fotoEve },
+        { nome: 'Maria Gabriele', descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit libero, molestie id auctor molestie, fermentum a tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.', foto: fotoMaria },
+        { nome: 'Ana Pimenta', descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit libero, molestie id auctor molestie, fermentum a tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.', foto: fotoAna },
+        { nome: 'Quezia Tavares', descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit libero, molestie id auctor molestie, fermentum a tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.', foto: fotoQuezia },
     ];
 
     return (
