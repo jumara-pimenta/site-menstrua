@@ -4,6 +4,7 @@ import Integrantes from "../components/Integrantes/integrantes";
 import Menu from "../components/Menu/menu";
 import Midia from "../components/Midia/midia";
 import Projeto from "../components/Projeto/projeto";
+import VoluntariadoForms from "../components/Voluntariado/voluntariado";
 
 const Home = () => {
   return (
@@ -18,6 +19,9 @@ const Home = () => {
       </section>
       <section id="integrantes">
         <Integrantes />
+      </section>
+      <section id="voluntariado">
+        <VoluntariadoForms />
       </section>
       <Footer />
     </>

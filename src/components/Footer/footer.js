@@ -1,4 +1,4 @@
-import { footerContainer, logoContainer, footerSection, logoImagem, footerLinks, contactInfo, copyright, iconStyle } from "./footerStyles";
+import { footerContainer, logoContainer, footerSection, logoImagem, footerLinks, contactInfo, copyright, iconStyle, linkStyle } from "./footerStyles";
 import { FaInstagram, FaLinkedin, FaFacebook, FaEnvelope } from "react-icons/fa";
 import logoImage from "../../assets/logo2.png";
 import { linkList } from "./footerStyles";
@@ -16,9 +16,15 @@ const Footer = () => {
           <div style={footerLinks}>
             <h3>Siga-nos</h3>
             <p>
-              <FaInstagram style={iconStyle} /> 
-              <FaLinkedin style={iconStyle} /> 
-              <FaFacebook style={iconStyle} />
+            <a href="https://www.instagram.com/projetomenstrua/" target="_blank" rel="noreferrer">
+                <FaInstagram style={iconStyle} />
+            </a>
+            <a href="https://www.linkedin.com/company/projetomenstrua/" target="_blank" rel="noreferrer">
+                <FaLinkedin style={iconStyle} />
+            </a> 
+            <a href="https://www.facebook.com/projetomenstrua" target="_blank" rel="noreferrer">
+                <FaFacebook style={iconStyle} />
+            </a>
             </p>
           </div>
           <div style={contactInfo}>
@@ -47,7 +53,7 @@ const Footer = () => {
       </div>
       <div style={copyright}>
     <hr style={hrStyle} />
-    <p>2024 | Site desenvolvido por Jumara Pimenta | menstRUA ©Todos os direitos reservados</p>
+    <p>2024 | Site desenvolvido por <a href="https://github.com/jumara-pimenta" target="_blank" rel="noreferrer" style={linkStyle}>Jumara Pimenta</a> | menstRUA © Todos os direitos reservados</p>
 </div>
     </footer>
   );

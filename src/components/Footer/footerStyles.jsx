@@ -62,6 +62,11 @@ export const hrStyle = {
     marginBottom: '0.5rem',
 };
 
+export const linkStyle = {
+    color: '#fff', 
+    textDecoration: 'none', 
+  };
+
 export const iconStyle = {
     color: '#F08892',
     fontSize: '20px',
