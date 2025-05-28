@@ -27,10 +27,10 @@ const Banner = () => {
 
       {/* Botões */}
       <div style={botoes}>
-        <a style={botaoDoar} href="./" rel="noreferrer" target="_blank">
+        <a style={botaoDoar} href="#contribua" rel="noreferrer">
           Quero doar
         </a>
-        <a style={botaoVoluntariar} href="./" rel="noreferrer" target="_blank">
+        <a style={botaoVoluntariar} href="#voluntariado" rel="noreferrer">
           Quero me voluntariar
         </a>
       </div>

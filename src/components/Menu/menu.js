@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { imagemLogo, li, link, lista, menu, menuStyle } from "./styles";
 import logo from "../../assets/logo.svg";
 
@@ -6,46 +5,32 @@ const Menu = () => {
   return (
     <header style={menuStyle}>
       <div>
-        <Link style={link} to="/">
+        <a style={link} href="#topo">
           <img style={imagemLogo} src={logo} alt="logo do projeto" />
-        </Link>
+        </a>
       </div>
       <div style={menu}>
         <ul style={lista}>
           <li style={li}>
-            <Link style={link} to="/">
-              Home
-            </Link>
+           <a style={link} href="#topo">Home</a>
           </li>
           <li style={li}>
-            <Link style={link} to="/sobre">
-              Sobre
-            </Link>
+            <a style={link} href="#sobre">Sobre</a>
           </li>
           <li style={li}>
-            <Link style={link} to="/midia">
-              Mídia
-            </Link>
+            <a style={link} href="#acoes">Ações</a>
           </li>
           <li style={li}>
-            <Link style={link} to="/acoes">
-              Ações
-            </Link>
+            <a style={link} href="#integrantes">Integrantes</a>
           </li>
           <li style={li}>
-            <Link style={link} to="/integrantes">
-              Integrantes
-            </Link>
+            <a style={link} href="#contribua">Contribua</a>
           </li>
           <li style={li}>
-            <Link style={link} to="/contribua">
-              Contribua
-            </Link>
+            <a style={link} href="#midia">Mídia</a>
           </li>
           <li style={li}>
-            <Link style={link} to="/voluntariado">
-              Voluntariado
-            </Link>
+            <a style={link} href="#voluntariado">Voluntariado</a>
           </li>
         </ul>
       </div>
