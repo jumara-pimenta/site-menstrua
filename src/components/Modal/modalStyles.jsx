@@ -64,4 +64,46 @@ export const imageItem = {
   height: '80px',
   objectFit: 'cover',
   borderRadius: '8px',
+  cursor: 'pointer',
+  transition: 'transform .2s',
+};
+
+export const closeZoomBtn = {
+  position: 'absolute',
+  top: '1rem',
+  right: '1rem',
+  background: 'rgba(0, 0, 0, 0.6)',
+  border: 'none',
+  color: '#fff',
+  fontSize: '1.5rem',
+  width: '2rem',
+  height: '2rem',
+  borderRadius: '50%',
+  cursor: 'pointer',
+  lineHeight: '1.5rem',
+  textAlign: 'center'
+};
+
+export const navZoomBtn = {
+  position: 'absolute',
+  top: '50%',
+  transform: 'translateY(-50%)',
+  background: 'rgba(0, 0, 0, 0.6)',
+  border: 'none',
+  color: '#fff',
+  fontSize: '2rem',
+  width: '2.5rem',
+  height: '2.5rem',
+  borderRadius: '50%',
+  cursor: 'pointer',
+  lineHeight: '1',
+  textAlign: 'center'
+};
+
+export const prevBtn = {
+  left: '1rem'
+};
+
+export const nextBtn = {
+  right: '1rem'
 };

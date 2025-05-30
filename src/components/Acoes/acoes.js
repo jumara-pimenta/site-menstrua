@@ -18,6 +18,13 @@ import img1 from '../../assets/fotoprojeto1.jpg';
 import img2 from '../../assets/fotoprojeto2.jpg';
 import img3 from '../../assets/banner.svg';
 
+function importAll(r) {
+  return r.keys().map(r)
+}
+const ativismoImgs = importAll(
+  require.context('../../assets/ativismo', false, /\.(jpe?g|png|jpg|JPG)$/)
+)
+
 const acoes = [
   {
     titulo: 'Distribuição de kits menstruais',
@@ -48,10 +55,7 @@ const acoes = [
     descricao:
       'De acordo com o relatório "Pobreza menstrual no Brasil - Desigualdades e violações"...',
     fullDescricao: 'Aqui vai o texto completo sobre a Primeira ação, contanto detalhes, depoimentos, resultados, …',
-    fotosExtras: [
-     require('../../assets/fotoprojeto1.jpg'),
-     require('../../assets/fotoprojeto2.jpg'),
-    ], 
+    fotosExtras: ativismoImgs,
     imagem: img3,
     link: '/acoes/3'
   }
