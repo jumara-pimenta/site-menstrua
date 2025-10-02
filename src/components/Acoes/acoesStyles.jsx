@@ -17,11 +17,11 @@ export const containerCartoes = {
   display: 'flex',
   scrollSnapType: 'x mandatory',
   padding: '0 9rem',
-  justifyContent: 'space-around'
+  justifyContent: 'space-between',
 };
 
 export const cartaoAcao = {
-  flex: '0 0 280px',
+  flex: '0 0 220px',
   backgroundColor: '#FFF',
   borderRadius: '12px',
   boxShadow: '0px 4px 8px rgba(0,0,0,0.1)',
@@ -43,12 +43,6 @@ export const imagemAcao = {
 export const conteudoAcao = {
   marginTop: '1rem',
   flexGrow: 1
-};
-
-export const dataAcao = {
-  fontSize: '12px',
-  color: '#777',
-  marginBottom: '0.25rem'
 };
 
 export const tituloAcao = {
@@ -74,4 +68,13 @@ export const linkVerMais = {
   fontWeight: '500',
   alignSelf: 'flex-end',
   cursor: 'pointer',
+};
+
+export const hrStyle = {
+    width: '10rem', 
+    borderTop: '1px solid #E72360', 
+    borderBottom: 'none',
+    borderLeft: 'none',
+    borderRight: 'none',
+    marginBottom: '0.5rem',
 };

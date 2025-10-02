@@ -47,10 +47,11 @@ export const closeBtn = {
 };
 
 export const description = {
-  fontSize: '16px',
+  fontSize: '14px',
   color: '#555',
   lineHeight: 1.5,
   marginBottom: '1rem',
+  textAlign: 'justify'
 };
 
 export const imageGrid = {
