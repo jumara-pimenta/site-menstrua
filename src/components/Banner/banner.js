@@ -8,6 +8,7 @@ import {
   BotaoDoar,
   BotaoVoluntariar,
   TextoCaixa,
+  ContainerCaixas,
 } from "./styles";
 
 const Banner = () => {
@@ -35,23 +36,24 @@ const Banner = () => {
           Quero me voluntariar
         </BotaoVoluntariar>
       </Botoes>
-
-      <TextoCaixa top="15%" right="25%">
-        321 mil alunas, 3,0% estudam em escolas que não possuem banheiro em
-        condições de uso
-      </TextoCaixa>
-      <TextoCaixa top="45%" right="30%">
-        440 mil meninas, 4,1% do total, que estudam em escolas que não possuem
-        separação de banheiros por sexo
-      </TextoCaixa>
-      <TextoCaixa top="30%" right="8%">
-        121 mil meninas estão no Nordeste, ou seja, 37,8% do total de meninas
-        que estudam em escolas sem banheiro
-      </TextoCaixa>
-      <TextoCaixa top="60%" right="12%">
-        Estima-se que no Brasil 1,24 milhão de meninas, não tenham à sua
-        disposição papel higiênico nos banheiros das escolas em que estudam
-      </TextoCaixa>
+     <ContainerCaixas>
+        <TextoCaixa top="15%" right="22%">
+          321 mil alunas, 3,0% estudam em escolas que não possuem banheiro em
+          condições de uso
+        </TextoCaixa>
+        <TextoCaixa top="45%" right="22%">
+          440 mil meninas, 4,1% do total, que estudam em escolas que não possuem
+          separação de banheiros por sexo
+        </TextoCaixa>
+        <TextoCaixa top="30%" right="8%">
+          121 mil meninas estão no Nordeste, ou seja, 37,8% do total de meninas
+          que estudam em escolas sem banheiro
+        </TextoCaixa>
+        <TextoCaixa top="60%" right="9%">
+          Estima-se que no Brasil 1,24 milhão de meninas, não tenham à sua
+          disposição papel higiênico nos banheiros das escolas em que estudam
+        </TextoCaixa>
+      </ContainerCaixas>
     </BannerSection>
   );
 };

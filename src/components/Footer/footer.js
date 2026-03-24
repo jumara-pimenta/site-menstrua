@@ -53,7 +53,7 @@ const Footer = () => {
       </div>
       <div style={copyright}>
     <hr style={hrStyle} />
-    <p>2024 | Site desenvolvido por <a href="https://github.com/jumara-pimenta" target="_blank" rel="noreferrer" style={linkStyle}>Jumara Pimenta</a> | menstRUA © Todos os direitos reservados</p>
+    <p>2026 | menstRUA © Todos os direitos reservados</p>
 </div>
     </footer>
   );

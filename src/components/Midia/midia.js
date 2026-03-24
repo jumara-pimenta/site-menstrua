@@ -1,14 +1,9 @@
 import { useState } from "react";
-import {
-  midiaSection,
-  tituloMidia,
-  containerVideos,
-  videoContainer,
-  iframeStyle,
-  arrowStyle,
-} from "./midiaStyles";
+import { useMidiaStyles } from "./midiaStyles";
 
 const Midia = () => {
+  const { videosPerPage, midiaSection, tituloMidia, containerVideos, videoContainer, iframeStyle, arrowStyle } = useMidiaStyles();
+
   const videos = [
     { url: "https://www.youtube.com/embed/gjLai4qYLoc", title: "Entrevista 1" },
     { url: "https://www.youtube.com/embed/GEEbtW6mows", title: "Entrevista 2" },
@@ -19,7 +14,6 @@ const Midia = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const videosPerPage = 3;
 
   // Avança de forma circular
   const handleNext = () => {
@@ -44,7 +38,7 @@ const Midia = () => {
     <section style={midiaSection} id="midia">
       <h2 style={tituloMidia}>Entrevistas</h2>
 
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", padding: "0 1rem", boxSizing: "border-box" }}>
         <button onClick={handlePrevious} style={arrowStyle} aria-label="Anterior">
           &#8249;
         </button>

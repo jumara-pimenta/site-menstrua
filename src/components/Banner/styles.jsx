@@ -7,7 +7,7 @@ export const BannerSection = styled.section`
   flex-direction: column;
   justify-content: center;
   max-width: 2000px;
-  height: 560px;
+  height: 580px;
   margin-top: 80px;
   padding: 2rem;
   background-image: url(${imgBanner});
@@ -41,6 +41,11 @@ export const Titulo = styled.h1`
   text-align: initial;
   margin-left: 94px;
 
+  @media (max-width: 1117px) {
+    font-size: 35px;
+    margin-left: 40px;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -57,6 +62,11 @@ export const InfoPobreza = styled.p`
   line-height: 24px;
   margin-left: 94px;
 
+    @media (max-width: 1117px) {
+    font-size: 14px;
+    margin-left: 40px;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
     margin-left: 0;
@@ -71,6 +81,11 @@ export const InfoFonte = styled.p`
   text-align: initial;
   line-height: 24px;
   margin-left: 94px;
+
+  @media (max-width: 1117px) {
+    font-size: 10px;
+    margin-left: 40px;
+  }
 
   @media (max-width: 768px) {
     width: 100%;
@@ -102,8 +117,15 @@ export const BotaoDoar = styled.a`
   margin-left: 94px;
   font-weight: 700;
 
+  @media (max-width: 1117px) {
+    margin-left: 40px;
+  }
+
+
   @media (max-width: 768px) {
     margin-left: 0;
+    font-size: 14px;
+    padding: 12px 24px;
   }
 `;
 
@@ -121,6 +143,23 @@ export const BotaoVoluntariar = styled.a`
 
   @media (max-width: 768px) {
     margin-left: 0;
+    font-size: 14px;
+    padding: 12px 10px;
+  }
+`;
+
+export const ContainerCaixas = styled.div`
+  @media (max-width: 900px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    gap: 16px;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
   }
 `;
 
@@ -136,8 +175,15 @@ export const TextoCaixa = styled.div`
   color: black;
   top: ${({ top }) => top || "0"};
   right: ${({ right }) => right || "0"};
+  transform: translate(20%, -20%);
+
+    @media (max-width: 900px) {
+    position: static;
+    transform: none;
+  }
 
   @media (max-width: 768px) {
+    transform: none;
     position: relative;
     top: auto;
     right: auto;

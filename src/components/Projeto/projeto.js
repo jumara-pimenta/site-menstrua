@@ -7,7 +7,8 @@ import {
   ProjetoImagens,
   ImagemContainer1,
   ImagemContainer2,
-  ImagemProjeto,
+  ImagemProjeto1,
+  ImagemProjeto2
 } from "./projetoStyles";
 
 import fotoprojeto1 from "../../assets/fotoprojeto1.jpg";
@@ -31,14 +32,14 @@ const Projeto = () => {
 
       <ProjetoImagens>
         <ImagemContainer1>
-          <ImagemProjeto
+          <ImagemProjeto1
             src={fotoprojeto1}
             alt="Imagem do projeto menstRUA 1"
           />
         </ImagemContainer1>
 
         <ImagemContainer2>
-          <ImagemProjeto
+          <ImagemProjeto2
             src={fotoprojeto2}
             alt="Imagem do projeto menstRUA 2"
           />
