@@ -1,4 +1,4 @@
-import { footerContainer, logoContainer, footerSection, logoImagem, footerLinks, contactInfo, copyright, iconStyle, linkStyle } from "./footerStyles";
+import { footerContainer, logoContainer, footerSection, logoImagem, footerLinks, contactInfo, copyright, iconStyle } from "./footerStyles";
 import { FaInstagram, FaLinkedin, FaFacebook, FaEnvelope } from "react-icons/fa";
 import logoImage from "../../assets/logo2.png";
 import { linkList } from "./footerStyles";
