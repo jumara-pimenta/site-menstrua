@@ -106,7 +106,7 @@ export const Botoes = styled.div`
 `;
 
 export const BotaoDoar = styled.a`
-  width: 10rem;
+  display: inline-block;
   background-color: #e72360;
   color: #fff;
   font-size: 16px;
@@ -116,11 +116,11 @@ export const BotaoDoar = styled.a`
   line-height: 22px;
   margin-left: 94px;
   font-weight: 700;
+  white-space: nowrap;
 
   @media (max-width: 1117px) {
     margin-left: 40px;
   }
-
 
   @media (max-width: 768px) {
     margin-left: 0;
@@ -130,7 +130,7 @@ export const BotaoDoar = styled.a`
 `;
 
 export const BotaoVoluntariar = styled.a`
-  width: 12rem;
+  display: inline-block;
   color: #fff;
   font-size: 16px;
   text-decoration: none;
@@ -140,6 +140,7 @@ export const BotaoVoluntariar = styled.a`
   line-height: 22px;
   font-weight: 700;
   margin-left: 40px;
+  white-space: nowrap;
 
   @media (max-width: 768px) {
     margin-left: 0;
@@ -171,22 +172,22 @@ export const TextoCaixa = styled.div`
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   font-size: 12px;
   max-width: 220px;
-  text-align: center;
+  text-align: left;
   color: black;
   top: ${({ top }) => top || "0"};
-  right: ${({ right }) => right || "0"};
-  transform: translate(20%, -20%);
+  ${({ left }) => left ? `left: ${left};` : ""}
+  ${({ right }) => right ? `right: ${right};` : ""}
 
-    @media (max-width: 900px) {
+  @media (max-width: 900px) {
     position: static;
     transform: none;
   }
 
   @media (max-width: 768px) {
-    transform: none;
     position: relative;
     top: auto;
     right: auto;
+    left: auto;
     margin: 10px auto;
   }
 `;

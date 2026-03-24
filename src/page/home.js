@@ -5,6 +5,7 @@ import Menu from "../components/Menu/menu";
 import Midia from "../components/Midia/midia";
 import Acoes from "../components/Acoes/acoes";
 import Projeto from "../components/Projeto/projeto";
+import Impacto from "../components/Impacto/impacto";
 import Contribua from "../components/Contribua/contribua";
 import VoluntariadoForms from "../components/Voluntariado/voluntariado";
 
@@ -16,6 +17,7 @@ const Home = () => {
       <section id="sobre">
         <Projeto />
       </section>
+      <Impacto />
       <section id="acoes">
         <Acoes />
       </section>

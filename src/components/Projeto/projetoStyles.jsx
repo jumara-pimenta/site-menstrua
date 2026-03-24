@@ -4,12 +4,13 @@ export const ProjetoSection = styled.section`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 2rem 8rem;
   margin-top: 2rem;
 
   @media (max-width: 768px) {
     flex-direction: column;
     text-align: center;
+    padding: 2rem;
   }
 `;
 

@@ -5,17 +5,13 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  width: 95%;
+  width: 100%;
   height: 94px;
   position: absolute;
   top: 0;
   left: 0;
   box-shadow: rgba(77, 32, 62, 0.2) 0px 4px 42px;
   padding: 0 2rem;
-
-  @media (max-width: 850px) {
-  width: 90%;
-  }
 `;
 
 export const Logo = styled.a`

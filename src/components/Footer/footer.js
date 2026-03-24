@@ -1,32 +1,43 @@
-import { footerContainer, logoContainer, footerSection, logoImagem, footerLinks, contactInfo, copyright, iconStyle } from "./footerStyles";
+import { useFooterStyles } from "./footerStyles";
 import { FaInstagram, FaLinkedin, FaFacebook, FaEnvelope } from "react-icons/fa";
 import logoImage from "../../assets/logo2.png";
-import { linkList } from "./footerStyles";
-import { linkItem } from "./footerStyles";
-import { hrStyle } from "./footerStyles";
 
 const Footer = () => {
+  const {
+    footerContainer,
+    logoContainer,
+    footerSection,
+    logoImagem,
+    footerLinks,
+    contactInfo,
+    copyright,
+    iconStyle,
+    linkList,
+    linkItem,
+    hrStyle,
+  } = useFooterStyles();
+
   return (
     <footer style={footerContainer}>
       <div style={footerSection}>
         <div style={logoContainer}>
-          {/* Logo */}
           <img src={logoImage} alt="Logo menstRUA" style={logoImagem} />
-          
+
           <div style={footerLinks}>
             <h3>Siga-nos</h3>
             <p>
-            <a href="https://www.instagram.com/projetomenstrua/" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/projetomenstrua/" target="_blank" rel="noreferrer">
                 <FaInstagram style={iconStyle} />
-            </a>
-            <a href="https://www.linkedin.com/company/projetomenstrua/" target="_blank" rel="noreferrer">
+              </a>
+              <a href="https://www.linkedin.com/company/projetomenstrua/" target="_blank" rel="noreferrer">
                 <FaLinkedin style={iconStyle} />
-            </a> 
-            <a href="https://www.facebook.com/projetomenstrua" target="_blank" rel="noreferrer">
+              </a>
+              <a href="https://www.facebook.com/projetomenstrua" target="_blank" rel="noreferrer">
                 <FaFacebook style={iconStyle} />
-            </a>
+              </a>
             </p>
           </div>
+
           <div style={contactInfo}>
             <h3>Contato</h3>
             <p>
@@ -34,7 +45,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        
+
         <div>
           <ul style={linkList}>
             <li style={linkItem} onClick={() => document.getElementById('sobre').scrollIntoView({ behavior: 'smooth' })}>Sobre o projeto</li>
@@ -42,7 +53,7 @@ const Footer = () => {
             <li style={linkItem} onClick={() => document.getElementById('integrantes').scrollIntoView({ behavior: 'smooth' })}>Coordenadoras</li>
           </ul>
         </div>
-        
+
         <div>
           <ul style={linkList}>
             <li style={linkItem} onClick={() => document.getElementById('contribua').scrollIntoView({ behavior: 'smooth' })}>Contribua</li>
@@ -51,10 +62,11 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+
       <div style={copyright}>
-    <hr style={hrStyle} />
-    <p>2026 | menstRUA © Todos os direitos reservados</p>
-</div>
+        <hr style={hrStyle} />
+        <p>2026 | menstRUA © Todos os direitos reservados</p>
+      </div>
     </footer>
   );
 };
