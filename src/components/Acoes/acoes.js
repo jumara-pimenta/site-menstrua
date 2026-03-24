@@ -1,5 +1,5 @@
 
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { useAcoesStyles } from './acoesStyles';
 import Modal from '../Modal/modal';
 
@@ -32,8 +32,7 @@ const acoes = [
     titulo: 'Distribuição de kits menstruais',
     descricao:
       'Nossas ações de distribuição de kits menstruais acontecem com...',
-    fullDescricao: 'Nossas ações de distribuição de kits menstruais acontecem com pessoas em situação de rua, comunidades periféricas, \
-    quilombolas, indígenas e em escolas da rede pública, com a frequência de uma ou duas vezes por mês. Essas ações são fundamentais para promover a dignidade e o bem-estar das pessoas atendidas, contribuindo para a redução da precariedade menstrual e para um período menstrual mais seguro.',
+    fullDescricao: 'Nossas ações de distribuição de kits menstruais acontecem com pessoas em situação de rua, comunidades periféricas, quilombolas, indígenas e em escolas da rede pública, com a frequência de uma ou duas vezes por mês. Essas ações são fundamentais para promover a dignidade e o bem-estar das pessoas atendidas, contribuindo para a redução da precariedade menstrual e para um período menstrual mais seguro.',
     fotosExtras: kitsImgs,   
     imagem: img1,
     link: '/acoes/1'
@@ -51,9 +50,7 @@ const acoes = [
     titulo: 'Ativismo Menstrual',
     descricao:
       'Atuamos no campo do ativismo menstrual por meio de...',
-    fullDescricao: 'Atuamos no campo do ativismo menstrual por meio de intervenções urbanas, como projeções em prédios, adesivagens e lambe-lambe. \
-    Essas ações ocupam o espaço público de forma criativa e provocativa, tornando a menstruação visível em lugares onde normalmente é silenciada. \
-    Ao inserir a temática no cotidiano da cidade, nosso objetivo é romper com o tabu, gerar reflexão coletiva e mobilizar a sociedade para reconhecer a menstruação como uma questão de direitos, dignidade e justiça social. Além disso, participamos de manifestações e atos públicos.',
+    fullDescricao: 'Atuamos no campo do ativismo menstrual por meio de intervenções urbanas, como projeções em prédios, adesivagens e lambe-lambe. Essas ações ocupam o espaço público de forma criativa e provocativa, tornando a menstruação visível em lugares onde normalmente é silenciada. Ao inserir a temática no cotidiano da cidade, nosso objetivo é romper com o tabu, gerar reflexão coletiva e mobilizar a sociedade para reconhecer a menstruação como uma questão de direitos, dignidade e justiça social. Além disso, participamos de manifestações e atos públicos.',
     fotosExtras: ativismoImgs,
     imagem: img3,
     link: '/acoes/3'
@@ -70,22 +67,14 @@ const acoes = [
 ];
 
 const Acoes = () => {
-  const listaRef = useRef(null);
   const [selectedAcao, setSelectedAcao] = useState(null);
   const { sectionAcoes, tituloAcoes, containerCartoes, cartaoAcao, imagemAcao, conteudoAcao, tituloAcao, descricaoAcao, linkVerMais } = useAcoesStyles();
-
-  const scroll = (dir) => {
-    const container = listaRef.current;
-    if (!container) return;
-    const desloc = dir === 'left' ? -container.offsetWidth : container.offsetWidth;
-    container.scrollBy({ left: desloc, behavior: 'smooth' });
-  };
 
   return (
   <>
     <section style={sectionAcoes}>
       <h2 style={tituloAcoes}>Ações</h2>
-      <div style={containerCartoes} ref={listaRef}>
+      <div style={containerCartoes}>
         {acoes.map((acao, i) => (
           <div key={i} style={cartaoAcao}>
             <img src={acao.imagem} alt={acao.titulo} style={imagemAcao} />

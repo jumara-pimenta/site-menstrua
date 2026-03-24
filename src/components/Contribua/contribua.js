@@ -77,7 +77,7 @@ const Contribua = () => (
 
     {/* Aviso */}
     <div style={avisoBox}>
-      <div style={avisoIcon}><img src={avisoIconImage} /></div>
+      <div style={avisoIcon}><img src={avisoIconImage} alt="" /></div>
       <p style={avisoText}>
         Você também pode nos ajudar doando os produtos necessários em um ponto de 
         coleta do projeto. <br />
