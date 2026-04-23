@@ -16,16 +16,12 @@ const Banner = () => {
     <BannerSection>
       <Info>
         <Titulo>
-          O menstRUA atua na luta contra a pobreza menstrual
+          O menstRUA atua na luta por Dignidade Menstrual
         </Titulo>
         <InfoPobreza>
-          Pobreza menstrual é um conceito que reúne em duas palavras um
-          fenômeno complexo, transdisciplinar e multidimensional, vivenciado
-          por meninas e mulheres devido à falta de acesso a recursos,
-          infraestrutura e conhecimento para que tenham plena capacidade de
-          cuidar da sua menstruação.
+          Dignidade menstrual é o direito de todas as pessoas que menstruam de viverem suas vidas com dignidade, segurança e conforto durante o período menstrual. 
+          Isso inclui acesso a produtos de manejo menstrual, instalações sanitárias adequadas, educação sobre saúde menstrual e a eliminação do estigma associado à menstruação.
         </InfoPobreza>
-        <InfoFonte>Fonte: Relatório Unicef UNFPA</InfoFonte>
       </Info>
 
       <Botoes>
@@ -38,20 +34,19 @@ const Banner = () => {
       </Botoes>
      <ContainerCaixas>
         <TextoCaixa top="10%" left="58%">
-          321 mil alunas, 3,0% estudam em escolas que não possuem banheiro em
-          condições de uso
+          321 mil alunas estudam em escolas que não possuem banheiro em
+          condições de uso.
         </TextoCaixa>
-        <TextoCaixa top="18%" right="6%">
-          121 mil meninas estão no Nordeste, ou seja, 37,8% do total de meninas
-          que estudam em escolas sem banheiro
+        <TextoCaixa top="22%" right="6%">
+          No Norte o percentual de meninas sem 
+          acesso a banheiro em suas escolas chega a quase 8,4%.
         </TextoCaixa>
         <TextoCaixa top="40%" left="58%">
-          440 mil meninas, 4,1% do total, que estudam em escolas que não possuem
-          separação de banheiros por sexo
+          1 a cada 4 meninas deixam de ir a escola por falta de absorventes.
         </TextoCaixa>
         <TextoCaixa top="50%" right="7%">
-          Estima-se que no Brasil 1,24 milhão de meninas, não tenham à sua
-          disposição papel higiênico nos banheiros das escolas em que estudam
+          Quase 200 mil alunas estão totalmente privadas 
+           de condições mínimas para cuidar da sua menstruação no ambiente escolar.
         </TextoCaixa>
       </ContainerCaixas>
     </BannerSection>

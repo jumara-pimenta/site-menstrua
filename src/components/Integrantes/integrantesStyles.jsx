@@ -31,6 +31,8 @@ export const useIntegrantesStyles = () => {
       flexWrap: 'wrap',
       justifyContent: 'center',
       gap: '1.5rem',
+      maxWidth: isMobile ? '100%' : 'calc(4 * 220px + 3 * 1.5rem)',
+      margin: '0 auto',
     },
 
     cartaoIntegrante: {

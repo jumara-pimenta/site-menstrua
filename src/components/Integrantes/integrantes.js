@@ -25,7 +25,7 @@ const Integrantes = () => {
     } = useIntegrantesStyles();
 
     const integrantes = [
-        { nome: 'Jumara Pimenta', descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit libero, molestie id auctor molestie, fermentum a tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.', foto: fotoJumara },
+        { nome: 'Jumara Pimenta', descricao: 'Idealizadora e coordenadora do projeto. É educadora menstrual e ativista ligada à causa da dignidade menstrual e da justiça reprodutiva.', foto: fotoJumara },
         { nome: 'Fernanda Pimenta', descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit libero, molestie id auctor molestie, fermentum a tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.', foto: fotoFernanda },
         { nome: 'Jhennifer Alcântara', descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit libero, molestie id auctor molestie, fermentum a tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.', foto: fotoJhen },
         { nome: 'Izaída Ribeiro', descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit libero, molestie id auctor molestie, fermentum a tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.', foto: fotoIza },
