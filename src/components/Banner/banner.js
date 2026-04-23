@@ -3,7 +3,6 @@ import {
   Info,
   Titulo,
   InfoPobreza,
-  InfoFonte,
   Botoes,
   BotaoDoar,
   BotaoVoluntariar,
