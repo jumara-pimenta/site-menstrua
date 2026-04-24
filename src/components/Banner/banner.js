@@ -36,14 +36,14 @@ const Banner = () => {
           321 mil alunas estudam em escolas que não possuem banheiro em
           condições de uso.
         </TextoCaixa>
-        <TextoCaixa top="22%" right="6%">
+        <TextoCaixa top="22%" right="10%">
           No Norte o percentual de meninas sem 
           acesso a banheiro em suas escolas chega a quase 8,4%.
         </TextoCaixa>
         <TextoCaixa top="40%" left="58%">
           1 a cada 4 meninas deixam de ir a escola por falta de absorventes.
         </TextoCaixa>
-        <TextoCaixa top="50%" right="7%">
+        <TextoCaixa top="50%" right="12%">
           Quase 200 mil alunas estão totalmente privadas 
            de condições mínimas para cuidar da sua menstruação no ambiente escolar.
         </TextoCaixa>

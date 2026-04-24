@@ -12,12 +12,12 @@ const VoluntariadoForms = () => {
 
       <div style={styles.photosWrapper}>
         <div style={styles.photoCard1}>
-          <img src={vol1} alt="Voluntários em ação nas ruas" style={styles.photo} />
-          <div style={styles.photoLabel}>Distribuição nas ruas</div>
+          <img src={vol1} alt="Reunião de voluntários" style={styles.photo} />
+          <div style={styles.photoLabel}></div>
         </div>
         <div style={styles.photoCard2}>
           <img src={vol2} alt="Reunião de voluntários" style={styles.photo} />
-          <div style={styles.photoLabel}>Time de voluntariado</div>
+          <div style={styles.photoLabel}></div>
         </div>
       </div>
 

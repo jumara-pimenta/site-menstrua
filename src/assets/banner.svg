@@ -1,4 +1,4 @@
-<svg width="1440" height="564" viewBox="0 0 1440 564" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+﻿<svg width="1440" height="564" viewBox="0 0 1440 564" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_820_1268)">
 <rect width="1440" height="564" fill="white"/>
 <rect width="1440" height="564" fill="url(#paint0_linear_820_1268)"/>
@@ -8,6 +8,7 @@
 <path d="M1372.5 21.4498L1223.94 -273.908L1065 -588L907.217 -273.908L757.495 21.4498C715.615 80.6772 693.159 150.517 693 222.028C693 316.438 732.193 406.981 801.956 473.738C871.72 540.496 966.339 578 1065 578C1163.66 578 1258.28 540.496 1328.04 473.738C1397.81 406.981 1437 316.438 1437 222.028C1436.84 150.517 1414.38 80.6772 1372.5 21.4498V21.4498Z" stroke="white" stroke-opacity="0.1"/>
 <path d="M1358.54 -7.29785L1216.96 -288.723L1065.5 -588L915.14 -288.723L772.461 -7.29785C732.551 49.1358 711.151 115.681 711 183.819C711 273.776 748.349 360.048 814.831 423.656C881.312 487.265 971.481 523 1065.5 523C1159.52 523 1249.69 487.265 1316.17 423.656C1382.65 360.048 1420 273.776 1420 183.819C1419.85 115.681 1398.45 49.1358 1358.54 -7.29785V-7.29785Z" stroke="white" stroke-opacity="0.1"/>
 <path d="M1344.49 -35.5228L1209.7 -303.27L1065.5 -588L922.35 -303.27L786.514 -35.5228C748.518 18.1679 728.144 81.4786 728 146.305C728 231.889 763.558 313.968 826.852 374.485C890.145 435.002 975.989 469 1065.5 469C1155.01 469 1240.85 435.002 1304.15 374.485C1367.44 313.968 1403 231.889 1403 146.305C1402.86 81.4786 1382.48 18.1679 1344.49 -35.5228V-35.5228Z" stroke="white" stroke-opacity="0.1"/>
+<ellipse cx="1150" cy="190" rx="580" ry="380" fill="url(#glow_absorvente)"/>
 <rect x="1212" y="26" width="424" height="318" transform="rotate(90 1212 26)" fill="url(#pattern0)"/>
 </g>
 <defs>
@@ -21,7 +22,11 @@
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_820_1268" transform="matrix(0.0017331 0 0 0.0023108 0 -0.000288898)"/>
 </pattern>
-<linearGradient id="paint0_linear_820_1268" x1="1440" y1="-0.000153942" x2="-178.5" y2="626" gradientUnits="userSpaceOnUse">
+<radialGradient id="glow_absorvente" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+  <stop offset="0%" stop-color="white" stop-opacity="0.45"/>
+  <stop offset="55%" stop-color="white" stop-opacity="0.18"/>
+  <stop offset="100%" stop-color="white" stop-opacity="0"/>
+</radialGradient><linearGradient id="paint0_linear_820_1268" x1="1440" y1="-0.000153942" x2="-178.5" y2="626" gradientUnits="userSpaceOnUse">
 <stop stop-color="#E72360"/>
 <stop offset="1" stop-color="#4D203F"/>
 </linearGradient>
