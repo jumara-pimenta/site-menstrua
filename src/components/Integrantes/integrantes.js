@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useIntegrantesStyles } from './integrantesStyles';
 
 import fotoJumara from '../../assets/integrantes/Integrante.jpeg';
-import fotoFernanda from '../../assets/integrantes/Integrante2.jpeg';
+import fotoFernanda from '../../assets/integrantes/Integrante2.png';
 import fotoJhen from '../../assets/integrantes/Integrante1.jpeg';
 import fotoIza from '../../assets/integrantes/Integrante4.jpeg';
 import fotoEve from '../../assets/integrantes/Integrante5.jpeg';
