@@ -18,11 +18,11 @@ import { FaBoxOpen, FaHandHoldingHeart, FaBookOpen, FaMicrophone, FaUsers, FaMap
 import fotoProjeto from "../../assets/fotoprojeto1.jpg";
 
 const stats = [
-  { icone: <FaBoxOpen />, numero: "2.697", label: "Kits menstruais distribuídos" },
-  { icone: <FaHandHoldingHeart />, numero: "62.392", label: "Absorventes distribuídos" },
-  { icone: <FaUsers />, numero: "59", label: "Ações de distribuição" },
-  { icone: <FaBookOpen />, numero: "34", label: "Atividades sobre saúde menstrual" },
-  { icone: <FaMicrophone />, numero: "33", label: "Participações em eventos" },
+  { icone: <FaBoxOpen />, numero: "+ 2.700", label: "Kits menstruais distribuídos" },
+  { icone: <FaHandHoldingHeart />, numero: "+ 62.800", label: "Absorventes distribuídos" },
+  { icone: <FaUsers />, numero: "+ 60", label: "Ações de distribuição" },
+  { icone: <FaBookOpen />, numero: "+ 35", label: "Atividades sobre saúde menstrual" },
+  { icone: <FaMicrophone />, numero: "+ 30", label: "Participações em eventos" },
   { icone: <FaMapMarkerAlt />, numero: "40", label: "Comunidades atendidas" },
 ];
 
