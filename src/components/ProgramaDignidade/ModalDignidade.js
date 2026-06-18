@@ -18,6 +18,7 @@ import {
 } from "./ProgramaDignidadeStyles";
 
 const ModalDignidade = ({ aberto, onClose, mapaAberto, onToggleMapa }) => {
+  const modalRef = useRef(null);
   const mapaRef = useRef(null);
 
   if (!aberto) return null;
@@ -26,14 +27,17 @@ const ModalDignidade = ({ aberto, onClose, mapaAberto, onToggleMapa }) => {
     onToggleMapa();
     if (!mapaAberto) {
       setTimeout(() => {
-        mapaRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+        if (mapaRef.current && modalRef.current) {
+          const mapaTop = mapaRef.current.offsetTop;
+          modalRef.current.scrollTo({ top: mapaTop, behavior: "smooth" });
+        }
       }, 50);
     }
   };
 
   return (
     <div style={overlay} onClick={onClose}>
-      <ModalBox onClick={(e) => e.stopPropagation()}>
+      <ModalBox ref={modalRef} onClick={(e) => e.stopPropagation()}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1.5rem" }}>
           <ModalTitulo>Programa Dignidade Menstrual</ModalTitulo>
           <button style={closeBtn} onClick={onClose}>×</button>
@@ -75,7 +79,7 @@ const ModalDignidade = ({ aberto, onClose, mapaAberto, onToggleMapa }) => {
           <RetiradaBox>
             <RetiradaTitulo>Retirada dos absorventes</RetiradaTitulo>
             <RetiradaTexto>
-              Vá até uma Framácia credenciada pelo <strong>Farmácia Popular</strong> e apresente:
+              Vá até uma Farmácia credenciada pelo <strong>Farmácia Popular</strong> e apresente:
             </RetiradaTexto>
             <PassoLista>
               <PassoItem>Documento de identificação oficial com foto e número do CPF.</PassoItem>
