@@ -1,4 +1,4 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "frame-src 'self' https://www.google.com https://maps.googleapis.com https://maps.google.com https://mapsengine.google.com https://docs.google.com;"
+    Content-Security-Policy = "frame-src 'self' https://www.google.com https://maps.googleapis.com https://maps.google.com https://mapsengine.google.com https://docs.google.com https://www.youtube.com https://youtube.com https://youtu.be;"
