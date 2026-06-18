@@ -96,10 +96,10 @@ const ModalDignidade = ({ aberto, onClose, mapaAberto, onToggleMapa }) => {
             <iframe
               title="Farmácias Populares em Manaus"
               src="https://www.google.com/maps/d/u/0/embed?mid=1JvOxIFDBfmpLCZx8JPyYmE89fDBgfBQ&ehbc=2E312F"
-              width="100%"
-              height="420"
-              style={{ border: "none", borderRadius: "12px" }}
               allowFullScreen
+              allow="fullscreen"
+              referrerPolicy="no-referrer-when-downgrade"
+              loading="lazy"
             />
           </MapaWrapper>
         )}

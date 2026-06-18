@@ -232,10 +232,25 @@ export const RetiradaTexto = styled.p`
 
 export const MapaWrapper = styled.div.withConfig({ displayName: "MapaWrapper" })`
   border-radius: 12px;
-  overflow: hidden;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
   margin-top: 1.5rem;
   scroll-margin-top: 1rem;
+  height: 420px;
+  position: relative;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+  }
+
+  @media (max-width: 480px) {
+    height: 320px;
+  }
 `;
 
 export const ModalTitulo = styled.h2`
