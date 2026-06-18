@@ -1,6 +1,4 @@
 import React, { useRef } from "react";
-
-const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
 import { overlay, closeBtn } from "../Modal/modalStyles";
 import {
   BotaoOndeRetirar,
@@ -18,6 +16,8 @@ import {
   ModalTitulo,
   ModalBox,
 } from "./ProgramaDignidadeStyles";
+
+const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
 
 const ModalDignidade = ({ aberto, onClose, mapaAberto, onToggleMapa }) => {
   const modalRef = useRef(null);
