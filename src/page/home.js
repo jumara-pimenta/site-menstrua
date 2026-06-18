@@ -8,6 +8,7 @@ import Projeto from "../components/Projeto/projeto";
 import Impacto from "../components/Impacto/impacto";
 import Contribua from "../components/Contribua/contribua";
 import VoluntariadoForms from "../components/Voluntariado/voluntariado";
+import ProgramaDignidade from "../components/ProgramaDignidade/ProgramaDignidade";
 
 const Home = () => {
   return (
@@ -32,6 +33,9 @@ const Home = () => {
       </section>
       <section id="voluntariado">
         <VoluntariadoForms />
+      </section>
+      <section id="programa-dignidade">
+        <ProgramaDignidade />
       </section>
       <Footer />
     </>

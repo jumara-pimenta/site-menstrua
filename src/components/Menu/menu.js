@@ -38,6 +38,7 @@ const Menu = () => {
             <Item><LinkMenu href="#contribua">Contribua</LinkMenu></Item>
             <Item><LinkMenu href="#midia">Mídia</LinkMenu></Item>
             <Item><LinkMenu href="#voluntariado">Voluntariado</LinkMenu></Item>
+            <Item><LinkMenu href="#programa-dignidade">Dignidade Menstrual</LinkMenu></Item>
           </Lista>
         </Nav>
       </Header>
@@ -54,6 +55,7 @@ const Menu = () => {
             <LinkMenu href="#contribua" onClick={() => setMenuAberto(false)}>Contribua</LinkMenu>
             <LinkMenu href="#midia" onClick={() => setMenuAberto(false)}>Mídia</LinkMenu>
             <LinkMenu href="#voluntariado" onClick={() => setMenuAberto(false)}>Voluntariado</LinkMenu>
+            <LinkMenu href="#programa-dignidade" onClick={() => setMenuAberto(false)}>Dignidade Menstrual</LinkMenu>
           </MenuMobile>
         </>
       )}

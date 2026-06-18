@@ -51,14 +51,15 @@ const Footer = () => {
             <li style={linkItem} onClick={() => document.getElementById('sobre').scrollIntoView({ behavior: 'smooth' })}>Sobre o projeto</li>
             <li style={linkItem} onClick={() => document.getElementById('acoes').scrollIntoView({ behavior: 'smooth' })}>Ações</li>
             <li style={linkItem} onClick={() => document.getElementById('integrantes').scrollIntoView({ behavior: 'smooth' })}>Coordenadoras</li>
+            <li style={linkItem} onClick={() => document.getElementById('contribua').scrollIntoView({ behavior: 'smooth' })}>Contribua</li>
           </ul>
         </div>
 
         <div>
           <ul style={linkList}>
-            <li style={linkItem} onClick={() => document.getElementById('contribua').scrollIntoView({ behavior: 'smooth' })}>Contribua</li>
             <li style={linkItem} onClick={() => document.getElementById('midia').scrollIntoView({ behavior: 'smooth' })}>Entrevistas</li>
             <li style={linkItem} onClick={() => document.getElementById('voluntariado').scrollIntoView({ behavior: 'smooth' })}>Voluntariado</li>
+            <li style={linkItem} onClick={() => document.getElementById('programa-dignidade').scrollIntoView({ behavior: 'smooth' })}>Dignidade Menstrual</li>
           </ul>
         </div>
       </div>
