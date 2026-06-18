@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+
+const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
 import { overlay, closeBtn } from "../Modal/modalStyles";
 import {
   BotaoOndeRetirar,
@@ -93,14 +95,37 @@ const ModalDignidade = ({ aberto, onClose, mapaAberto, onToggleMapa }) => {
 
         {mapaAberto && (
           <MapaWrapper ref={mapaRef}>
-            <iframe
-              title="Farmácias Populares em Manaus"
-              src="https://www.google.com/maps/d/u/0/embed?mid=1JvOxIFDBfmpLCZx8JPyYmE89fDBgfBQ&ehbc=2E312F"
-              allowFullScreen
-              allow="fullscreen"
-              referrerPolicy="no-referrer-when-downgrade"
-              loading="lazy"
-            />
+            {isMobile ? (
+              <a
+                href="https://www.google.com/maps/d/viewer?mid=1JvOxIFDBfmpLCZx8JPyYmE89fDBgfBQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  height: "100%",
+                  backgroundColor: "#fff5f8",
+                  color: "#e72360",
+                  fontWeight: "700",
+                  fontSize: "16px",
+                  textDecoration: "none",
+                  borderRadius: "12px",
+                  gap: "8px",
+                }}
+              >
+                🗺️ Abrir mapa no Google Maps
+              </a>
+            ) : (
+              <iframe
+                title="Farmácias Populares em Manaus"
+                src="https://www.google.com/maps/d/u/0/embed?mid=1JvOxIFDBfmpLCZx8JPyYmE89fDBgfBQ&ehbc=2E312F"
+                allowFullScreen
+                allow="fullscreen"
+                referrerPolicy="no-referrer-when-downgrade"
+                loading="lazy"
+              />
+            )}
           </MapaWrapper>
         )}
       </ModalBox>
