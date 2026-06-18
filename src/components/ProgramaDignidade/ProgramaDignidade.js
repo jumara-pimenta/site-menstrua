@@ -7,8 +7,6 @@ import {
   IntroDesc,
   Botoes,
   BotaoSaibaMais,
-  BotaoOndeRetirar,
-  MapaWrapper,
 } from "./ProgramaDignidadeStyles";
 import ModalDignidade from "./ModalDignidade";
 
